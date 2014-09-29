@@ -1,0 +1,57 @@
+\documentclass[10pt]{article}
+\usepackage{amssymb, amsmath}
+\pdfpagewidth=8.5truein
+\pdfpageheight=11.0truein
+\setlength{\textheight}{8.875in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\parindent}{1pc}
+\setlength{\oddsidemargin}{-.1875in}  % Centers text.
+\setlength{\evensidemargin}{-.1875in}
+\begin{document}
+
+\hfill Eliot Piering
+\hfill 9-11-14
+
+\center Homework4
+
+\noindent Problem 1.
+
+\begin{table}[ht]
+\caption{Nim game table}
+\centering
+\begin{tabular}{c c c}
+	Marbles &  Strategy & Win or Lose\\ [0.5ex]
+\hline
+1 & P1 has to take the last marble & lose 
+2 & P1 takes 1 marble leaving p2 with 1 marble & win
+3 & p1 takes 2 marbles & win
+4 & p1 takes 3 marbles & win
+5 & p1 takes any amount & lose
+6 & p1 takes 1 leaving p2 with 5 marbles & win
+7 & p1 takes 2 marbles & win
+8 & p1 takes 3 marbles & win
+9 & p1 takes any amount & lose
+10 & p1 takes 1 marble leaving p2 with 9 marbles & win
+11 & p1 takes 2 marbles & win
+
+\end{tabular}
+\end{table}
+
+Proposition: P(n): Player 1 will win if the amount of marbles is equal to 4n - 2, 4n - 1, or 4n for all n > 0
+
+Proof:
+
+Base Case:  n = 0; P(1), 
+		case 1, 4n - 2 = 2, P1 takes a marble and leaves P2 in the losing position of 1 marble
+		case 2, 4n - 1 = 3, P1 takes 2 marbles and leaves P2 in the losing position of 1 marble
+		case 3, 4n = 4, P1 takes 3 marbles and leaves P2 in the losing position of 1 marble
+
+Induction Hypothesis:
+	P(n) /longrightarrow P(n+1)
+
+Proof:
+	Assume P(n) for all piles of size 4n -2, 4n -1, or 4n p1 wins
+

@@ -1,0 +1,61 @@
+\documentclass[10pt]{article}
+\usepackage{amssymb, amsmath}
+\pdfpagewidth=8.5truein
+\pdfpageheight=11.0truein
+\setlength{\textheight}{8.875in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\parindent}{1pc}
+\setlength{\oddsidemargin}{-.1875in}  % Centers text.
+\setlength{\evensidemargin}{-.1875in}
+
+\begin{document}
+
+\hfill Eliot Piering
+\hfill 9-11-14 
+
+\center Homework2
+
+\noindent Problem 1.
+
+\begin{enumerate}
+	\item $( P \longrightarrow (Q \vee R))$ given
+	\item $( R \longrightarrow S)$ given
+	\item $( \neg S \longrightarrow \neg Q)$ given 
+	\item $( P )$ given
+	\item $( \neg P \vee (Q \vee R) )$ line 1: implies rule
+	\item $( \neg R \vee S )$ line 2: imples rule 
+	\item $( Q \vee R )$ line 1, line 4: modus ponus
+	\item $( S \vee Q )$ line 6, line 7: resolution
+	\item $( S \vee \neg Q )$ line 3: implies rule an negation 
+\item $( S )$ line 8, line 9: disjunctive syllogism  
+
+\end{enumerate}
+
+\item Problem 2.
+\begin{enumerate}
+	\item $( \neg P(a) \longrightarrow Q(a) )$	given 
+	\item $( P(a) \longrightarrow Q(a) )$		given 
+	\item $( \forall x, Q(x) \longrightarrow S(x))$ given 
+	\item $( Q(a) \longrightarrow S(x) )$		line 3: universal instansiation 
+	\item $( P(a) \longrightarrow S(a) )$		line 1, 2: hypothetical syllogism
+	\item $( \neg P(a) \vee Q(a))$			line 2: implies rule
+	\item $( P(a) \vee Q(a) )$			line 1: imples rule and double negation
+	\item $( Q(a) )$				line 6, 7: disjunctive syllogism (note I think I have the wrong name for this) 
+	\item $( S(a) )$				line 4, 9: modus ponens 
+\end{enumerate}
+
+\item Problem 3.
+\begin{enumerate}
+	\item prove $( \neg \forall x P(x) \longrightarrow \forall y (Q(y) \wedge R(y)) )$ is equal to $( \exists x \neg( P(x) \longrightarrow \forall y (Q(y) \wedge R(y))) )$
+	\item $( \neg( P(a) \longrightarrow \forall y (Q(y) \wedge R(y))) )$ existential instantiation 
+	\item $( \neg( P(a) \longrightarrow (Q(a) \wedge R(a))) )$ universal instanstiation
+	\item $(  \neg( \neg P(a) \vee (Q(a) \wedge R(a)) ) )$ implies rule
+	\item $( \neg (P(a) \longrightarrow (Q(a) \wedge R(a))) )$ implies rule and double negation
+	\item $( \neg (P(a) \longrightarrow forall y (Q(y) \wedge R(y))) )$ universal generalization 
+	\item $(  \neg ( \forall x P(x) \longrightarrow forall y (Q(y) \wedge R(y))) )$ universal generalization  
+\end{enumerate}
+
+\end{document}
